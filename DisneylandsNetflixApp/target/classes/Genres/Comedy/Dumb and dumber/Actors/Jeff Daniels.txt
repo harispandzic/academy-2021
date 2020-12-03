@@ -1,3 +1,0 @@
-Name:Jeff
-Surname:Daniels
-Year of birth:1955

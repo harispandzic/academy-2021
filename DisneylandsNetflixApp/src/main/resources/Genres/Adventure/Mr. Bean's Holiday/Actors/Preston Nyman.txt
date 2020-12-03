@@ -1,3 +1,0 @@
-Name:Preston
-Surname:Nyman
-Year of birth:1997

@@ -1,3 +1,0 @@
-Name:Graham
-Surname:McTavish
-Year of birth:1961

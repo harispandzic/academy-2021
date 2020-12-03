@@ -1,3 +1,0 @@
-Name:Harrison
-Surname:Ford
-Year of birth:1942

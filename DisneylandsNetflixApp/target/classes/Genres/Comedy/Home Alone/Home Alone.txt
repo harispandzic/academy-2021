@@ -1,6 +1,0 @@
-Movie title:Home Alone
-Relase year:1990
-Director name:Chris Columbus
-IBDM rating:8
-Duration:103
-Movie description:An eight-year-old troublemaker must protect his house from a pair of burglars when he is accidentally left home alone by his family during Christmas vacation.

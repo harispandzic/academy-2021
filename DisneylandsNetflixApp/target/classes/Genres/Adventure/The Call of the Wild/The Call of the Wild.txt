@@ -1,6 +1,0 @@
-Movie title:The Call of the Wild
-Relase year:2020
-Director name:Chris Sanders
-IBDM rating:7
-Duration:100
-Movie description:A sled dog struggles for survival in the wilds of the Yukon.
