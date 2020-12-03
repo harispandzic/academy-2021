@@ -41,7 +41,7 @@
         <configuration>
             <archive>
                 <manifest>
-                    <mainClass>codecta.academy.DisneylandsNetflixApp.disneylands.Main</mainClass>
+                    <mainClass>codecta.academy.DisneylandsNetflixApp.Main</mainClass>
                     <addClasspath>true</addClasspath>
                     <classpathPrefix>lib/</classpathPrefix>
                 </manifest>
