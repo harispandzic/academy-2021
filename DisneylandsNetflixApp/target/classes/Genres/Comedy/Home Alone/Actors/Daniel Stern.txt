@@ -1,0 +1,3 @@
+Name:Daniel
+Surname:Stern
+Year of birth:1957

@@ -1,0 +1,3 @@
+Name:Arnold
+Surname:Schwarzenegger
+Year of birth:1947
