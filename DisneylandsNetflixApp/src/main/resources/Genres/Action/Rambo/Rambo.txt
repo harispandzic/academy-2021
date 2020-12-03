@@ -1,0 +1,6 @@
+Movie title:Rambo
+Relase year:2008
+Director name:Sylvester Stallone
+IBDM rating:7
+Duration:92
+Movie description:In Thailand, John Rambo joins a group of mercenaries to venture into war-torn Burma, and rescue a group of Christian aid workers who were kidnapped by the ruthless local infantry unit.

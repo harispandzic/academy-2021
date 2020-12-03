@@ -1,0 +1,6 @@
+Movie title:Snowden
+Relase year:2016
+Director name:Oliver Stone
+IBDM rating:7
+Duration:134
+Movie description:The NSA's illegal surveillance techniques are leaked to the public by one of the agency's employees, Edward Snowden, in the form of thousands of classified documents distributed to the press.
