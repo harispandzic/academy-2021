@@ -3,6 +3,7 @@ package codecta.academy.DisneylandsNetflixApp.netflix.Genres;
 import codecta.academy.DisneylandsNetflixApp.netflix.Actors.Actor;
 import codecta.academy.DisneylandsNetflixApp.netflix.Movies.Movie;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,17 +16,17 @@ public class Action implements Genre {
     @Override
     public List<Movie> getMovies() {
         //Movies
-        String movie1FileName = "C:\\Users\\Haris\\Desktop\\DisneylandsNetflixApp\\src\\main\\resources\\Genres\\Action\\Rambo\\Rambo.txt";
-        String movie2FileName = "C:\\Users\\Haris\\Desktop\\DisneylandsNetflixApp\\src\\main\\resources\\Genres\\Action\\Terminator\\Terminator.txt";
+        String movie1FileName = new File("src/main/resources/Genres/Action/Rambo/Rambo.txt").getAbsolutePath();
+        String movie2FileName = new File("src/main/resources/Genres/Action/Terminator/Terminator.txt").getAbsolutePath();
 
         //Movie 1 actors
-        String actor1FileName = "C:\\Users\\Haris\\Desktop\\DisneylandsNetflixApp\\src\\main\\resources\\Genres\\Action\\Rambo\\Actors\\Graham McTavish.txt";
-        String actor2FileName = "C:\\Users\\Haris\\Desktop\\DisneylandsNetflixApp\\src\\main\\resources\\Genres\\Action\\Rambo\\Actors\\Julie Benz.txt";
-        String actor3FileName = "C:\\Users\\Haris\\Desktop\\DisneylandsNetflixApp\\src\\main\\resources\\Genres\\Action\\Rambo\\Actors\\Sylvester Stalone.txt";
+        String actor1FileName = new File("src/main/resources/Genres/Action/Rambo/Actors/Graham McTavish.txt").getAbsolutePath();
+        String actor2FileName = new File("src/main/resources/Genres/Action/Rambo/Actors/Julie Benz.txt").getAbsolutePath();
+        String actor3FileName = new File("src/main/resources/Genres/Action/Rambo/Actors/Sylvester Stalone.txt").getAbsolutePath();
         //Movie 2 actors
-        String actor4FileName = "C:\\Users\\Haris\\Desktop\\DisneylandsNetflixApp\\src\\main\\resources\\Genres\\Action\\Terminator\\Actors\\Arnold Schwarzenegger.txt";
-        String actor5FileName = "C:\\Users\\Haris\\Desktop\\DisneylandsNetflixApp\\src\\main\\resources\\Genres\\Action\\Terminator\\Actors\\Linda Hamilton.txt";
-        String actor6FileName = "C:\\Users\\Haris\\Desktop\\DisneylandsNetflixApp\\src\\main\\resources\\Genres\\Action\\Terminator\\Actors\\Mackenzie Davis.txt";
+        String actor4FileName = new File("src/main/resources/Genres/Action/Terminator/Actors/Arnold Schwarzenegger.txt").getAbsolutePath();
+        String actor5FileName = new File("src/main/resources/Genres/Action/Terminator/Actors/Linda Hamilton.txt").getAbsolutePath();
+        String actor6FileName = new File("src/main/resources/Genres/Action/Terminator/Actors/Mackenzie Davis.txt").getAbsolutePath();
 
         List<Movie> movies = new ArrayList<Movie>();
         //movie Rambo

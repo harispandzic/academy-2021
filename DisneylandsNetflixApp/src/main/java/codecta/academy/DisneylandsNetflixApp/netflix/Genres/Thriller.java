@@ -3,6 +3,7 @@ package codecta.academy.DisneylandsNetflixApp.netflix.Genres;
 import codecta.academy.DisneylandsNetflixApp.netflix.Actors.Actor;
 import codecta.academy.DisneylandsNetflixApp.netflix.Movies.Movie;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,15 +15,15 @@ public class Thriller implements Genre{
     @Override
     public List<Movie> getMovies() {
         //Movies
-        String movie1FileName = "C:\\Users\\Haris\\Desktop\\DisneylandsNetflixApp\\src\\main\\resources\\Genres\\Thriller\\Snowden\\Snowden.txt";
-        String movie2FileName = "C:\\Users\\Haris\\Desktop\\DisneylandsNetflixApp\\src\\main\\resources\\Genres\\Thriller\\Unfriended - Dark Web\\Unfriended - Dark Web.txt";
+        String movie1FileName = new File("src/main/resources/Genres/Thriller/Snowden/Snowden.txt").getAbsolutePath();
+        String movie2FileName = new File("src/main/resources/Genres/Thriller/Unfriended - Dark Web/Unfriended - Dark Web.txt").getAbsolutePath();
 
         //Movie 1 actors
-        String actor1FileName = "C:\\Users\\Haris\\Desktop\\DisneylandsNetflixApp\\src\\main\\resources\\Genres\\Thriller\\Snowden\\Actors\\Joseph Gordon-Levitt.txt";
-        String actor2FileName = "C:\\Users\\Haris\\Desktop\\DisneylandsNetflixApp\\src\\main\\resources\\Genres\\Thriller\\Snowden\\Actors\\Melissa Leo.txt";
+        String actor1FileName = new File("src/main/resources/Genres/Thriller/Snowden/Actors/Joseph Gordon-Levitt.txt").getAbsolutePath();
+        String actor2FileName = new File("src/main/resources/Genres/Thriller/Snowden/Actors/Melissa Leo.txt").getAbsolutePath();
         //Movie 2 actors
-        String actor3FileName = "C:\\Users\\Haris\\Desktop\\DisneylandsNetflixApp\\src\\main\\resources\\Genres\\Thriller\\Unfriended - Dark Web\\Actors\\Heather Sossaman.txt";
-        String actor4FileName = "C:\\Users\\Haris\\Desktop\\DisneylandsNetflixApp\\src\\main\\resources\\Genres\\Thriller\\Unfriended - Dark Web\\Actors\\Matthew Bohrer.txt";
+        String actor3FileName = new File("src/main/resources/Genres/Thriller/Unfriended - Dark Web/Actors/Heather Sossaman.txt").getAbsolutePath();
+        String actor4FileName = new File("src/main/resources/Genres/Thriller/Unfriended - Dark Web/Actors/Matthew Bohrer.txt").getAbsolutePath();
 
         List<Movie> movies = new ArrayList<Movie>();
         //movie Snowden

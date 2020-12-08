@@ -3,6 +3,7 @@ package codecta.academy.DisneylandsNetflixApp.netflix.Genres;
 import codecta.academy.DisneylandsNetflixApp.netflix.Actors.Actor;
 import codecta.academy.DisneylandsNetflixApp.netflix.Movies.Movie;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,16 +15,17 @@ public class Adventure implements Genre {
     @Override
     public List<Movie> getMovies() {
         //Movies
-        String movie1FileName = "C:\\Users\\Haris\\Desktop\\DisneylandsNetflixApp\\src\\main\\resources\\Genres\\Adventure\\Mr. Bean's Holiday\\Mr. Bean's Holiday.txt";
-        String movie2FileName = "C:\\Users\\Haris\\Desktop\\DisneylandsNetflixApp\\src\\main\\resources\\Genres\\Adventure\\The Call of the Wild\\The Call of the Wild.txt";
+        String movie1FileName = new File("src/main/resources/Genres/Adventure/Mr. Bean's Holiday/Mr. Bean's Holiday.txt").getAbsolutePath();
+        String movie2FileName = new File("src/main/resources/Genres/Adventure/The Call of the Wild/The Call of the Wild.txt").getAbsolutePath();
+
 
         //Movie 1 actors
-        String actor1FileName = "C:\\Users\\Haris\\Desktop\\DisneylandsNetflixApp\\src\\main\\resources\\Genres\\Adventure\\Mr. Bean's Holiday\\Actors\\Emma de Caunes.txt";
-        String actor2FileName = "C:\\Users\\Haris\\Desktop\\DisneylandsNetflixApp\\src\\main\\resources\\Genres\\Adventure\\Mr. Bean's Holiday\\Actors\\Preston Nyman.txt";
-        String actor3FileName = "C:\\Users\\Haris\\Desktop\\DisneylandsNetflixApp\\src\\main\\resources\\Genres\\Adventure\\Mr. Bean's Holiday\\Actors\\Rowan Atkinson.txt";
+        String actor1FileName = new File("src/main/resources/Genres/Adventure/Mr. Bean's Holiday/Actors/Emma de Caunes.txt").getAbsolutePath();
+        String actor2FileName = new File("src/main/resources/Genres/Adventure/Mr. Bean's Holiday/Actors/Preston Nyman.txt").getAbsolutePath();
+        String actor3FileName = new File("src/main/resources/Genres/Adventure/Mr. Bean's Holiday/Actors/Rowan Atkinson.txt").getAbsolutePath();
         //Movie 2 actors
-        String actor4FileName = "C:\\Users\\Haris\\Desktop\\DisneylandsNetflixApp\\src\\main\\resources\\Genres\\Adventure\\The Call of the Wild\\Actors\\Harrison Ford.txt";
-        String actor5FileName = "C:\\Users\\Haris\\Desktop\\DisneylandsNetflixApp\\src\\main\\resources\\Genres\\Adventure\\The Call of the Wild\\Actors\\Omar Sy.txt";
+        String actor4FileName = new File("src/main/resources/Genres/Adventure/The Call of the Wild/Actors/Harrison Ford.txt").getAbsolutePath();
+        String actor5FileName = new File("src/main/resources/Genres/Adventure/The Call of the Wild/Actors/Omar Sy.txt").getAbsolutePath();
 
 
         List<Movie> movies = new ArrayList<Movie>();

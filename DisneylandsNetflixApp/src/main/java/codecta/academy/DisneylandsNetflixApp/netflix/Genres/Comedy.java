@@ -3,6 +3,7 @@ package codecta.academy.DisneylandsNetflixApp.netflix.Genres;
 import codecta.academy.DisneylandsNetflixApp.netflix.Actors.Actor;
 import codecta.academy.DisneylandsNetflixApp.netflix.Movies.Movie;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,16 +14,16 @@ public class Comedy implements Genre{
     @Override
     public List<Movie> getMovies() {
         //Movies
-        String movie1FileName = "C:\\Users\\Haris\\Desktop\\DisneylandsNetflixApp\\src\\main\\resources\\Genres\\Comedy\\Dumb and dumber\\Dumb and dumber.txt";
-        String movie2FileName = "C:\\Users\\Haris\\Desktop\\DisneylandsNetflixApp\\src\\main\\resources\\Genres\\Comedy\\Home Alone\\Home Alone.txt";
+        String movie1FileName = new File("src/main/resources/Genres/Comedy/Dumb and dumber/Dumb and dumber.txt").getAbsolutePath();
+        String movie2FileName = new File("src/main/resources/Genres/Comedy/Home Alone/Home Alone.txt").getAbsolutePath();
 
         //Movie 1 actors
-        String actor1FileName = "C:\\Users\\Haris\\Desktop\\DisneylandsNetflixApp\\src\\main\\resources\\Genres\\Comedy\\Dumb and dumber\\Actors\\Jeff Daniels.txt";
-        String actor2FileName = "C:\\Users\\Haris\\Desktop\\DisneylandsNetflixApp\\src\\main\\resources\\Genres\\Comedy\\Dumb and dumber\\Actors\\Jim Carrey.txt";
+        String actor1FileName = new File("src/main/resources/Genres/Comedy/Dumb and dumber/Actors/Jeff Daniels.txt").getAbsolutePath();
+        String actor2FileName = new File("src/main/resources/Genres/Comedy/Dumb and dumber/Actors/Jim Carrey.txt").getAbsolutePath();
         //Movie 2 actors
-        String actor3FileName = "C:\\Users\\Haris\\Desktop\\DisneylandsNetflixApp\\src\\main\\resources\\Genres\\Comedy\\Home Alone\\Actors\\Daniel Stern.txt";
-        String actor4FileName = "C:\\Users\\Haris\\Desktop\\DisneylandsNetflixApp\\src\\main\\resources\\Genres\\Comedy\\Home Alone\\Actors\\Joe Pesci.txt";
-        String actor5FileName = "C:\\Users\\Haris\\Desktop\\DisneylandsNetflixApp\\src\\main\\resources\\Genres\\Comedy\\Home Alone\\Actors\\Macaulay Culkin.txt";
+        String actor3FileName =  new File("src/main/resources/Genres/Comedy/Home Alone/Actors/Daniel Stern.txt").getAbsolutePath();
+        String actor4FileName = new File("src/main/resources/Genres/Comedy/Home Alone/Actors/Joe Pesci.txt").getAbsolutePath();
+        String actor5FileName = new File("src/main/resources/Genres/Comedy/Home Alone/Actors/Macaulay Culkin.txt").getAbsolutePath();
 
         List<Movie> movies = new ArrayList<Movie>();
         //movie Dumb and dumber
