@@ -1,4 +1,4 @@
-package org.acme.model;
+package com.codecta.academy.model;
 
 public class DisneyCharacter extends ModelObject {
     private String name;
@@ -19,5 +19,4 @@ public class DisneyCharacter extends ModelObject {
     public void setGreeting(String greeting) {
         this.greeting = greeting;
     }
-
 }

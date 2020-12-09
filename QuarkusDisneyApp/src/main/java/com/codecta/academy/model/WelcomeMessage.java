@@ -1,4 +1,4 @@
-package org.acme.model;
+package com.codecta.academy.model;
 
 public class WelcomeMessage {
     private String welcome;
