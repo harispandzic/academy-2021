@@ -5,6 +5,7 @@ import javax.persistence.MappedSuperclass;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
+@MappedSuperclass
 public abstract class ModelObject<K> {
     public abstract K getID();
 
