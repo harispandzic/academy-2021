@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "16b16f35-830a-4902-abb3-a889ac8c9cfc",
+		"name": "QuarkusDisney",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "welcomeMessage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/disney/welcomeMessage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"disney",
+						"welcomeMessage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addCharacter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Mickey\",\r\n    \"greeting\": \"Welcome.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/disney/addCharacter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"disney",
+						"addCharacter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllCharacters",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/disney/getAllCharacters",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"disney",
+						"getAllCharacters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCharacterByID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/disney/getCharacterByID/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"disney",
+						"getCharacterByID",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateCharacterByID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/disney/updateCharacterByID/1/Haris234/Hello",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"disney",
+						"updateCharacterByID",
+						"1",
+						"Haris234",
+						"Hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteCharacterByID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/disney/deleteCharacterByID/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"disney",
+						"deleteCharacterByID",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

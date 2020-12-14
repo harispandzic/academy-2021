@@ -1,0 +1,1 @@
+docker run --ulimit memlock=-1:-1 -it --rm=true --memory-swappiness=0 --name quarkus_disney -e POSTGRES_USER=haris -e POSTGRES_PASSWORD=haris -e POSTGRES_DB=quarkus_disney_db -p 5432:5432 postgres:10.5
