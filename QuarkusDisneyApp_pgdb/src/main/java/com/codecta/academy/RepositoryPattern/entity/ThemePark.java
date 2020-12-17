@@ -1,6 +1,8 @@
-package com.codecta.academy.model;
+package com.codecta.academy.RepositoryPattern.entity;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(schema = "codecta", name = "THEME_PARK")
@@ -16,6 +18,17 @@ public class ThemePark extends ModelObject{
     private Integer ID;
     private String location;
     private String attraction;
+
+    @OneToMany(mappedBy = "themePark", fetch = FetchType.LAZY)
+    private List<DisneyCharacter> disneyCharacters = new ArrayList<>();
+
+    public List<DisneyCharacter> getDisneyCharacters() {
+        return disneyCharacters;
+    }
+
+    public void setDisneyCharacters(List<DisneyCharacter> disneyCharacters) {
+        this.disneyCharacters = disneyCharacters;
+    }
 
     public String getLocation() {
         return location;

@@ -1,4 +1,4 @@
-package com.codecta.academy.model;
+package com.codecta.academy.RepositoryPattern.entity;
 
 import javax.persistence.*;
 
@@ -17,6 +17,17 @@ public class DisneyCharacter extends ModelObject {
 
     private String name;
     private String greeting;
+
+    @ManyToOne
+    private ThemePark themePark;
+
+    public ThemePark getThemePark() {
+        return themePark;
+    }
+
+    public void setThemePark(ThemePark themePark) {
+        this.themePark = themePark;
+    }
 
     public DisneyCharacter() {
     }

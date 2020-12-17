@@ -1,7 +1,6 @@
 package com.codecta.academy.RepositoryPattern;
 
-import com.codecta.academy.model.ModelObject;
-import com.sun.xml.bind.v2.model.core.ID;
+import com.codecta.academy.RepositoryPattern.entity.ModelObject;
 
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
@@ -11,10 +10,7 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import java.io.Serializable;
 import java.time.LocalDateTime;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
 
 public class Repository<T extends ModelObject, PK extends Serializable> {
     private Class<T> entityClass;

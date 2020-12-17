@@ -1,4 +1,4 @@
-package com.codecta.academy.model;
+package com.codecta.academy.RepositoryPattern.entity;
 
 public class WelcomeMessage {
     private String welcome;
